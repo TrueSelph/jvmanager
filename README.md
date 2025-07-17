@@ -1,87 +1,72 @@
-# Welcome to React Router!
+# JIVAS Graph (JVManager)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/TrueSelph/jvmanager)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/TrueSelph/jvmanager/test-jvmanager.yaml)
+![GitHub issues](https://img.shields.io/github/issues/TrueSelph/jvmanager)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/TrueSelph/jvmanager)
+![GitHub](https://img.shields.io/github/license/TrueSelph/jvmanager)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+`jvmanager` is a development tool designed to streamline development with the JIVAS platform. It allows you to manage your JIVAS application, and perform various development tasks.
 
-## Features
+## Installation
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+To install `jvmanager`, use `pip`:
 
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
+```sh
+pip install jvmanager
 ```
 
-### Development
+## Usage
 
-Start the development server with HMR:
+To use `jvmanager`, you need to log in first:
 
-```bash
-npm run dev
+```sh
+jvmanager launch
 ```
 
-Your application will be available at `http://localhost:5173`.
+After logging in, you can use any of the available commands. For example, to create a new action:
 
-## Building for Production
 
-Create a production build:
+## 🔰 Contributing
 
-```bash
-npm run build
-```
+- **🐛 [Report Issues](https://github.com/TrueSelph/jvmanager/issues)**: Submit bugs found or log feature requests for the `jvmanager` project.
+- **💡 [Submit Pull Requests](https://github.com/TrueSelph/jvmanager/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 
-## Deployment
+<details closed>manager
+<summary>Contributing Guidelines</summary>
 
-### Docker Deployment
+1. **Fork the Repository**: Start by forking the project repository to your github account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone https://github.com/TrueSelph/jvmanager
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to github**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+</details>
 
-To build and run using Docker:
+<details open>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+    <a href="https://github.com/TrueSelph/jvmanager/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=TrueSelph/jvmanager" />
+   </a>
+</p>
+</details>
 
-```bash
-docker build -t my-app .
+## 🎗 License
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+This project is protected under the Apache License 2.0. See [LICENSE](./LICENSE) for more information.
