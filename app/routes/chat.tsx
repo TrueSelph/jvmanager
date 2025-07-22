@@ -123,7 +123,6 @@ export default function ChatRoute({ loaderData }: Route.ComponentProps) {
 			</Group>
 
 			<Divider mt="xs" mb="xl" />
-
 			<Card px="xl" h="80vh" withBorder>
 				<ts-messenger
 					// streaming="true"
@@ -148,6 +147,7 @@ export default function ChatRoute({ loaderData }: Route.ComponentProps) {
 						"--ts-input-placeholder-color": "#000000eb",
 						"--ts-response-msg-color": "black",
 					})}
+					streaming="true"
 					with-debug="true"
 					layout="standard"
 					session-id={loaderData.sessionId || ""}

@@ -27,8 +27,6 @@ import {
 	IconArrowUpRight,
 	IconCalendar,
 	IconChartFunnel,
-	IconCoin,
-	IconDiscount2,
 	IconMessage,
 	IconNotes,
 	IconReceipt2,
@@ -334,7 +332,7 @@ export default function ChatRoute({ loaderData }: Route.ComponentProps) {
 												</Table.Thead>
 
 												<Table.Tbody>
-													{loaderData.logs.data.map((log) => (
+													{loaderData.logs.data?.map((log) => (
 														<Table.Tr key={log.id}>
 															<Table.Td width={"180px"}>
 																{dayjs(log.time_stamp).format(
@@ -402,24 +400,25 @@ export function StatsGrid({
 		{
 			title: "Total Interactions",
 			icon: "interaction",
-			value: analytics.interactionsByDate.total,
-			points: analytics.interactionsByDate.data.map((point) => point.count),
+			value: analytics.interactionsByDate.total || 0,
+			points:
+				analytics.interactionsByDate.data?.map((point) => point.count) || [],
 		},
 		{
 			title: "Unique Users",
 			icon: "user",
-			value: analytics.usersByDate.total,
-			points: analytics.usersByDate.data.map((point) => point.count),
+			value: analytics.usersByDate.total || 0,
+			points: analytics.usersByDate.data?.map((point) => point.count) || [],
 		},
 		{
 			title: "Unique Channels",
 			icon: "channel",
-			value: analytics.channelsByDate.total,
-			points: analytics.channelsByDate.data.map((point) => point.count),
+			value: analytics.channelsByDate.total || 0,
+			points: analytics.channelsByDate.data?.map((point) => point.count) || [],
 		},
 	] as const;
 
-	const stats = data.map((stat) => {
+	const stats = data?.map((stat) => {
 		const Icon = icons[stat.icon];
 		const DiffIcon = stat.diff > 0 ? IconArrowUpRight : IconArrowDownRight;
 
@@ -513,7 +512,7 @@ function InteractionsChart({
 		Channels?: number;
 	}[] = [];
 
-	analytics.interactionsByDate.data.forEach((item) => {
+	analytics.interactionsByDate.data?.forEach((item) => {
 		const datePoint = data.find((i) => item.date === i.date);
 
 		if (!datePoint) {
@@ -526,7 +525,7 @@ function InteractionsChart({
 		}
 	});
 
-	analytics.usersByDate.data.forEach((item) => {
+	analytics.usersByDate.data?.forEach((item) => {
 		const datePoint = data.find((i) => item.date === i.date);
 
 		if (!datePoint) {
@@ -539,7 +538,7 @@ function InteractionsChart({
 		}
 	});
 
-	analytics.channelsByDate.data.forEach((item) => {
+	analytics.channelsByDate.data?.forEach((item) => {
 		const datePoint = data.find((i) => item.date === i.date);
 
 		if (!datePoint) {
@@ -559,10 +558,12 @@ function InteractionsChart({
 			</Title>
 			<LineChart
 				h={300}
-				data={data.map((item) => ({
-					...item,
-					date: dayjs(item.date).format("DD MMM"),
-				}))}
+				data={
+					data?.map((item) => ({
+						...item,
+						date: dayjs(item.date).format("DD MMM"),
+					})) || []
+				}
 				dataKey="date"
 				withDots
 				withLegend

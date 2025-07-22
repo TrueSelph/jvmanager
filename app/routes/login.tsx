@@ -90,7 +90,8 @@ export default function Login() {
 			email: isEmail(),
 			password: isNotEmpty(),
 			host: matches(
-				/^https?:\/\/[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+				/^https?:\/\/[a-zA-Z0-9.-]+(:\d+)?$/,
+				// /^https?:\/\/[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 				"Please enter a valid host e.g http://localhost:8000",
 			),
 		},

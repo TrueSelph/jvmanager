@@ -60,7 +60,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<script src="/dist/index.js"></script>
+				<script
+					crossorigin=""
+					src="https://cdn.jsdelivr.net/gh/TrueSelph/ts-messenger/dist/index.js"
+				></script>
 				<MantineProvider>
 					<ModalsProvider>{children}</ModalsProvider>
 				</MantineProvider>

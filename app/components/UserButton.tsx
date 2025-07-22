@@ -26,6 +26,7 @@ export function UserButton({
 			onClick={() => {
 				modals.open({
 					title: "Switch Agent",
+					centered: true,
 					children: (
 						<>
 							<AgentSelect agents={agents} />
