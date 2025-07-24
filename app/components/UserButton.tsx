@@ -1,8 +1,4 @@
-import {
-	IconChevronRight,
-	IconSelector,
-	IconSwitch,
-} from "@tabler/icons-react";
+import { IconSelector } from "@tabler/icons-react";
 import { Avatar, Button, Group, Text, UnstyledButton } from "@mantine/core";
 import classes from "./UserButton.module.css";
 import { modals } from "@mantine/modals";

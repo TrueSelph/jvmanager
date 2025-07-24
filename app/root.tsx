@@ -61,8 +61,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<script
-					crossorigin=""
+					crossOrigin=""
 					src="https://cdn.jsdelivr.net/gh/TrueSelph/ts-messenger/dist/index.js"
+				></script>
+
+				<script
+					crossOrigin=""
+					type="module"
+					src="https://cdn.jsdelivr.net/gh/TrueSelph/jvgraph-viewer@main/dist/index.js?t=1"
 				></script>
 				<MantineProvider>
 					<ModalsProvider>{children}</ModalsProvider>
