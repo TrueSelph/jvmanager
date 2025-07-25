@@ -39,7 +39,7 @@ jvmanager/manager/client/assets/UserButton-DFVFx_YX.css
 jvmanager/manager/client/assets/action-details-CoiE2LWb.js
 jvmanager/manager/client/assets/actions-BLZrsZJW.css
 jvmanager/manager/client/assets/actions-BSA5CKbT.js
-jvmanager/manager/client/assets/chat-Dkd26pRv.js
+jvmanager/manager/client/assets/chat-BI-HdLeh.js
 jvmanager/manager/client/assets/chunk-QMGIS6GS-CBZUm-7V.js
 jvmanager/manager/client/assets/create-safe-context-CzEsa9t0.js
 jvmanager/manager/client/assets/createReactComponent-CwEnMXT7.js
@@ -58,7 +58,7 @@ jvmanager/manager/client/assets/layout-CrMCQAuq.js
 jvmanager/manager/client/assets/login-BH5StkDL.js
 jvmanager/manager/client/assets/login-DWJfxyLj.css
 jvmanager/manager/client/assets/logout-BhUE1vN0.js
-jvmanager/manager/client/assets/manifest-344a20da.js
+jvmanager/manager/client/assets/manifest-f9d5220e.js
 jvmanager/manager/client/assets/new-agent-CBL6piyC.css
 jvmanager/manager/client/assets/new-agent-Wai5j5Hg.js
 jvmanager/manager/client/assets/nprogress.store-CG_bDZMJ.js
