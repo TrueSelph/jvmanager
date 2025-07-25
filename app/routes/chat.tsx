@@ -147,7 +147,7 @@ export default function ChatRoute({ loaderData }: Route.ComponentProps) {
 						"--ts-input-placeholder-color": "#000000eb",
 						"--ts-response-msg-color": "black",
 					})}
-					streaming="true"
+					streaming="false"
 					with-debug="true"
 					layout="standard"
 					session-id={loaderData.sessionId || ""}
